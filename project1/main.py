@@ -56,7 +56,7 @@ if analyze and uploaded_file:
         for m in genai.list_models():
             print(m.name)
 
-        model = genai.GenerativeModel("models/gemini-2.5-flash")
+        model = genai.GenerativeModel(model_name="gemini-2.5-flash")
 
         response = model.generate_content(prompt)   
 
